@@ -1,4 +1,5 @@
 import { ICONS } from './icons.js';
+import { TECH_ICONS } from './tech-icons.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
@@ -36,5 +37,16 @@ export function svgIcon(name, { size = 20, className } = {}) {
     path.setAttribute('d', d);
     svg.append(path);
   }
+  return svg;
+}
+
+export function techIcon(slug) {
+  const markup = TECH_ICONS[slug];
+  if (!markup) return null;
+  const svg = document.createElementNS(SVG_NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 24 24');
+  svg.setAttribute('fill', 'currentColor');
+  svg.setAttribute('aria-hidden', 'true');
+  svg.innerHTML = markup;
   return svg;
 }

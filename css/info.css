@@ -12,6 +12,26 @@
   text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.85rem;
 }
 
+.tech-tile {
+  position: relative; display: inline-grid; place-items: center; width: 38px; height: 38px;
+  border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-elevated);
+  color: var(--text-faint); cursor: default;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.tech-tile svg { width: 18px; height: 18px; }
+.tech-tile:hover, .tech-tile:focus-visible { color: var(--accent); border-color: var(--accent); outline: none; }
+.tech-tile::after {
+  content: attr(data-tip); position: absolute; bottom: calc(100% + 8px); left: 50%;
+  padding: 0.3rem 0.6rem; border-radius: var(--radius-sm);
+  background: var(--text); color: var(--bg); font-family: var(--font-sans);
+  font-size: 0.7rem; font-weight: 600; white-space: nowrap; letter-spacing: normal; text-transform: none;
+  opacity: 0; pointer-events: none; z-index: 5;
+  transform: translate(-50%, 4px); transition: opacity 0.15s var(--ease), transform 0.15s var(--ease);
+}
+.tech-tile:hover::after, .tech-tile:focus-visible::after, .tech-tile:active::after {
+  opacity: 1; transform: translate(-50%, 0);
+}
+
 .edu-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 .edu-list { list-style: none; padding: 0; display: grid; gap: 1rem; }
 .edu-title { font-size: var(--step-1); }

@@ -119,14 +119,37 @@ export const EN = {
   skills: {
     title: 'Tech stack',
     groups: [
-      { name: 'Backend', items: ['.NET 8', 'C#', 'Web API', 'EF Core', 'VB.NET', 'Node.js', 'Python'] },
-      { name: 'Frontend', items: ['Angular 19', 'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML5'] },
-      { name: 'Mobile', items: ['React Native / Expo', 'Native Android', 'Ionic', 'Flutter'] },
-      { name: 'Data', items: ['SQL Server', 'PostgreSQL', 'MySQL', 'Supabase'] },
-      { name: 'DevOps', items: ['Azure DevOps', 'CI/CD', 'Git', 'Docker', 'IIS', 'Railway', 'Vercel'] },
-      { name: 'Architecture', items: ['Clean Architecture', 'REST APIs', 'JWT / OAuth2', 'Multi-tenant'] },
-      { name: 'AI', items: ['AI agents', 'Gemini API', 'AI-assisted development', 'Machine Learning'] },
-      { name: 'Reporting & tax', items: ['Reporting Services', 'Power BI', 'E-invoicing XML 4.4'] },
+      { name: 'Backend', items: [
+        { name: '.NET 8', icon: 'dotnet' }, { name: 'C#', icon: null }, { name: 'Web API', icon: null },
+        { name: 'EF Core', icon: null }, { name: 'VB.NET', icon: null }, { name: 'Node.js', icon: 'nodedotjs' }, { name: 'Python', icon: 'python' },
+      ] },
+      { name: 'Frontend', items: [
+        { name: 'Angular 19', icon: 'angular' }, { name: 'React', icon: 'react' }, { name: 'Next.js', icon: 'nextdotjs' },
+        { name: 'TypeScript', icon: 'typescript' }, { name: 'Tailwind CSS', icon: 'tailwindcss' }, { name: 'HTML5', icon: 'html5' },
+      ] },
+      { name: 'Mobile', items: [
+        { name: 'React Native / Expo', icon: 'expo' }, { name: 'Native Android', icon: 'android' },
+        { name: 'Ionic', icon: 'ionic' }, { name: 'Flutter', icon: 'flutter' },
+      ] },
+      { name: 'Data', items: [
+        { name: 'SQL Server', icon: null }, { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'MySQL', icon: 'mysql' }, { name: 'Supabase', icon: 'supabase' },
+      ] },
+      { name: 'DevOps', items: [
+        { name: 'Azure DevOps', icon: null }, { name: 'CI/CD', icon: null }, { name: 'Git', icon: 'git' },
+        { name: 'Docker', icon: 'docker' }, { name: 'IIS', icon: null }, { name: 'Railway', icon: 'railway' }, { name: 'Vercel', icon: 'vercel' },
+      ] },
+      { name: 'Architecture', items: [
+        { name: 'Clean Architecture', icon: null }, { name: 'REST APIs', icon: null },
+        { name: 'JWT / OAuth2', icon: 'jsonwebtokens' }, { name: 'Multi-tenant', icon: null },
+      ] },
+      { name: 'AI', items: [
+        { name: 'AI agents', icon: null }, { name: 'Gemini API', icon: 'googlegemini' },
+        { name: 'AI-assisted development', icon: null }, { name: 'Machine Learning', icon: null },
+      ] },
+      { name: 'Reporting & tax', items: [
+        { name: 'Reporting Services', icon: null }, { name: 'Power BI', icon: null }, { name: 'E-invoicing XML 4.4', icon: null },
+      ] },
     ],
   },
   education: {

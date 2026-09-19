@@ -63,7 +63,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 }
 .icon-button:hover { border-color: var(--accent); color: var(--accent); }
 
-.tag-list { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; padding: 0; }
+.tag-list { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; list-style: none; padding: 0; }
 .tag {
   font-family: var(--font-mono); font-size: 0.75rem; padding: 0.2rem 0.55rem;
   border-radius: 999px; background: var(--accent-soft); color: var(--accent);
