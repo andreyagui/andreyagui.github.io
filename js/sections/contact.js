@@ -2,8 +2,7 @@ import { el, clear, svgIcon } from '../dom.js';
 import { sectionHeader } from './section-header.js';
 
 function contactLink({ href, icon, label, external = false }) {
-  const attrs = { class: 'contact-link', href };
-  if (external) Object.assign(attrs, { target: '_blank', rel: 'noopener noreferrer' });
+  const attrs = { class: 'contact-link', href, ...(external && { target: '_blank', rel: 'noopener noreferrer' }) };
   return el('li', {}, el('a', attrs, [svgIcon(icon), el('span', { text: label })]));
 }
 
