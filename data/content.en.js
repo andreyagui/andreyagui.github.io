@@ -70,7 +70,7 @@ export const EN = {
         ],
       },
       {
-        role: 'Tech Lead', company: 'SIKU', location: 'Heredia, Costa Rica', period: 'Jan 2019 — Feb 2020',
+        role: 'Software Engineer', company: 'SIKU', location: 'Heredia, Costa Rica', period: 'Jan 2019 — Feb 2020',
         bullets: [
           'Medical-records software for healthcare professionals nationwide.',
           'Trello-style board for medical teams with C#, Web API, SQL Server and Angular.',
@@ -102,7 +102,7 @@ export const EN = {
     featured: [
       { ...PROJECTS.rentify, tagline: 'PropTech SaaS', description: 'Rental management for property owners in Costa Rica: AI-generated contracts, financial dashboard and multi-tenant architecture.' },
       { ...PROJECTS.nexora, tagline: 'AI marketing agents', description: 'An autonomous marketing department: AI agents that research, create and publish social media content; the client only approves.' },
-      { ...PROJECTS.kardex, tagline: 'Vehicle history', description: 'Mobile vehicle-history app with passive mileage tracking through background location, built for battery life and privacy.' },
+      { ...PROJECTS.kardex, tagline: 'AI vehicle history', description: 'Mobile app that predicts mechanical failures with AI, certifies vehicle history with PDF reports, and tracks fuel and maintenance expenses; includes digital ownership transfer and fleet plans.' },
       { ...PROJECTS.duopay, tagline: 'Couples finance', description: 'Shared expenses, budgets and balances for couples, on web and mobile.' },
       { ...PROJECTS.andara, tagline: 'Portfolio management', description: 'My own dashboard to run all my products: projects, stages, tasks and production readiness.' },
       { ...PROJECTS.exchange, tagline: 'Trading journal', description: 'Trade log with a metrics and performance dashboard.' },
@@ -113,6 +113,7 @@ export const EN = {
       { ...PROJECTS.sparrow, description: 'Anime fashion e-commerce: catalog, cart and order management.' },
       { ...PROJECTS.durex, description: "Website for Costa Rica's first virtual LGBTQ+ Pride march, in partnership with Durex (covered by La República)." },
       { ...PROJECTS.leones, description: 'Mobile app for the Lions Club of Costa Rica: members, aid requests and activities.' },
+      { ...PROJECTS.hecbox, description: 'Website for HEC Box, a Miami-to-Costa Rica package forwarding service: real-time tracking, consolidated shipments from multiple stores and home delivery.' },
     ],
   },
   skills: {
@@ -153,5 +154,4 @@ export const EN = {
     cvLabel: 'Download CV (PDF)',
     cvFile: CV_FILES.en,
   },
-  footer: { text: 'Handcrafted with HTML, CSS and JavaScript.' },
 };

@@ -37,7 +37,7 @@ test('content never exposes phone number or salary', () => {
 
 test('excluded repositories are never listed', () => {
   const text = JSON.stringify(CONTENT).toLowerCase();
-  for (const banned of ['career-ops', 'employee-finder', 'hecbox', '"sigi"']) {
+  for (const banned of ['career-ops', 'employee-finder', '"sigi"']) {
     expect(text).not.toContain(banned);
   }
 });

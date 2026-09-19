@@ -29,7 +29,7 @@ export const PROJECTS = {
     tags: ['Next.js', 'Python', 'Supabase', 'Gemini', 'Docker'],
   },
   kardex: {
-    id: 'kardex', name: 'Kardex ID', url: null, image: null, logo: `${LOGOS}/kardex.png`,
+    id: 'kardex', name: 'Kardex ID', url: 'https://www.kardexapp.com/es', image: null, logo: `${LOGOS}/kardex.png`,
     tags: ['React Native', 'Expo', 'TypeScript', 'Supabase'],
   },
   duopay: {
@@ -49,4 +49,5 @@ export const PROJECTS = {
   sparrow: { id: 'sparrow', name: 'Sparrow', tags: ['React', 'Node.js'] },
   durex: { id: 'durex', name: 'Durex Pride Virtual', tags: ['Web'] },
   leones: { id: 'leones', name: 'Club de Leones CR', tags: ['Android'] },
+  hecbox: { id: 'hecbox', name: 'HEC Box', url: 'https://www.hecboxcr.com', tags: ['Web'] },
 };

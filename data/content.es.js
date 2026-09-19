@@ -70,7 +70,7 @@ export const ES = {
         ],
       },
       {
-        role: 'Líder Técnico', company: 'SIKU', location: 'Heredia, Costa Rica', period: 'Ene 2019 — Feb 2020',
+        role: 'Ingeniero de Software', company: 'SIKU', location: 'Heredia, Costa Rica', period: 'Ene 2019 — Feb 2020',
         bullets: [
           'Software de expedientes médicos para profesionales de salud a nivel nacional.',
           'Tablero tipo Trello para equipos médicos con C#, Web API, SQL Server y Angular.',
@@ -102,7 +102,7 @@ export const ES = {
     featured: [
       { ...PROJECTS.rentify, tagline: 'PropTech SaaS', description: 'Gestión de alquileres para propietarios en Costa Rica: contratos generados con IA, panel financiero y arquitectura multi-tenant.' },
       { ...PROJECTS.nexora, tagline: 'Agentes de IA para marketing', description: 'Un departamento de marketing autónomo: agentes de IA que investigan, crean y publican contenido en redes sociales; el cliente solo aprueba.' },
-      { ...PROJECTS.kardex, tagline: 'Historial vehicular', description: 'App móvil de historial vehicular con registro pasivo de kilometraje mediante ubicación en segundo plano, priorizando batería y privacidad.' },
+      { ...PROJECTS.kardex, tagline: 'Historial vehicular con IA', description: 'App móvil que predice fallas mecánicas con IA, certifica el historial del vehículo con reportes en PDF y controla gastos de combustible y mantenimiento; incluye traspaso digital de propiedad y planes para flotas.' },
       { ...PROJECTS.duopay, tagline: 'Finanzas en pareja', description: 'Gastos, presupuestos y balances compartidos para parejas, en web y app móvil.' },
       { ...PROJECTS.andara, tagline: 'Gestión de portafolio', description: 'Panel propio para gestionar todos mis productos: proyectos, etapas, tareas y preparación para producción.' },
       { ...PROJECTS.exchange, tagline: 'Journal de trading', description: 'Registro de operaciones de trading con dashboard de métricas y rendimiento.' },
@@ -113,6 +113,7 @@ export const ES = {
       { ...PROJECTS.sparrow, description: 'E-commerce de moda anime: catálogo, carrito y gestión de pedidos.' },
       { ...PROJECTS.durex, description: 'Sitio de la primera marcha virtual LGBTQ+ de Costa Rica, en alianza con Durex (cobertura en La República).' },
       { ...PROJECTS.leones, description: 'App móvil para el Club de Leones de Costa Rica: miembros, solicitudes de ayuda y actividades.' },
+      { ...PROJECTS.hecbox, description: 'Sitio de HEC Box, servicio de casillero y envíos entre Miami y Costa Rica: seguimiento de paquetes en tiempo real, consolidación de compras de varias tiendas y entrega a domicilio.' },
     ],
   },
   skills: {
@@ -153,5 +154,4 @@ export const ES = {
     cvLabel: 'Descargar CV (PDF)',
     cvFile: CV_FILES.es,
   },
-  footer: { text: 'Hecho a mano con HTML, CSS y JavaScript.' },
 };

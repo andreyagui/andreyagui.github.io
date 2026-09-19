@@ -26,5 +26,5 @@ export function renderPage(content, { lang }) {
   renderSkills(document.getElementById('skills'), content.skills);
   renderEducation(document.getElementById('education'), content.education);
   renderContact(document.getElementById('contact'), content.contact);
-  renderFooter(document.getElementById('site-footer'), { name: content.hero.name, footer: content.footer });
+  renderFooter(document.getElementById('site-footer'), { name: content.hero.name });
 }
