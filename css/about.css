@@ -1,0 +1,18 @@
+.about-grid {
+  display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem); align-items: start;
+}
+.about-text { display: grid; gap: 1rem; color: var(--text-muted); line-height: 1.75; max-width: 65ch; }
+.about-highlights { display: grid; gap: 1rem; }
+.highlight {
+  display: flex; flex-direction: column-reverse; padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);
+}
+.highlight-value { font-size: var(--step-3); font-weight: 800; color: var(--accent); line-height: 1; }
+.highlight-label { color: var(--text-muted); font-size: var(--step--1); margin-top: 0.35rem; }
+
+@media (max-width: 760px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-highlights { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; }
+  .highlight { padding: 1rem 0.75rem; }
+}
