@@ -19,6 +19,6 @@ export function renderExperience(container, experience) {
   clear(container);
   container.append(el('div', { class: 'container' }, [
     sectionHeader({ id: 'experience', index: 2, title: experience.title }),
-    el('ol', { class: 'timeline', role: 'list' }, experience.items.map(timelineItem)),
+    el('ol', { class: 'timeline', role: 'list', 'data-reveal-group': true }, experience.items.map(timelineItem)),
   ]));
 }

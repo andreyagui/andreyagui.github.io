@@ -10,12 +10,12 @@ export function renderContact(container, contact) {
   clear(container);
   container.append(el('div', { class: 'container contact-inner' }, [
     sectionHeader({ id: 'contact', index: 6, title: contact.title, subtitle: contact.text }),
-    el('ul', { class: 'contact-links', role: 'list' }, [
+    el('ul', { class: 'contact-links', role: 'list', 'data-reveal-group': true }, [
       contactLink({ href: `mailto:${contact.email}`, icon: 'mail', label: contact.email }),
       contactLink({ href: contact.linkedin, icon: 'linkedin', label: contact.linkedinText, external: true }),
       contactLink({ href: contact.github, icon: 'github', label: contact.githubText, external: true }),
     ]),
-    el('a', { class: 'button button--primary contact-cv', href: contact.cvFile, download: true, 'data-cv-link': true },
+    el('a', { class: 'button button--primary contact-cv', href: contact.cvFile, download: true, 'data-cv-link': true, 'data-reveal': true },
       [svgIcon('download', { size: 18 }), contact.cvLabel]),
   ]));
 }

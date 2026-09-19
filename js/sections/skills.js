@@ -9,6 +9,6 @@ export function renderSkills(container, skills) {
   ]));
   container.append(el('div', { class: 'container' }, [
     sectionHeader({ id: 'skills', index: 4, title: skills.title }),
-    el('ul', { class: 'skill-grid', role: 'list' }, groups),
+    el('ul', { class: 'skill-grid', role: 'list', 'data-reveal-group': true }, groups),
   ]));
 }

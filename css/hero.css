@@ -15,27 +15,36 @@
   display: inline-flex; align-items: center; padding: 0.3rem 0.85rem;
   border-radius: 999px; background: var(--accent-soft);
   font-family: var(--font-mono); font-size: var(--step--1); color: var(--accent);
+  animation: slide-up 0.7s var(--ease) both;
 }
-.hero-name { font-size: var(--step-4); font-weight: 800; margin-top: 0.9rem; }
-.hero-role { font-size: var(--step-2); font-weight: 600; color: var(--text-muted); margin-top: 0.5rem; }
-.hero-stack { font-family: var(--font-mono); font-size: var(--step--1); color: var(--accent); margin-top: 1rem; }
-.hero-tagline { font-size: var(--step-1); color: var(--text-muted); max-width: 42ch; margin-top: 1.25rem; }
-.hero-location { font-size: var(--step--1); color: var(--text-faint); margin-top: 1rem; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-top: 2.25rem; }
+.hero-name { font-size: var(--step-4); font-weight: 800; margin-top: 0.9rem; animation: slide-up 0.7s var(--ease) 0.08s both; }
+.hero-role { font-size: var(--step-2); font-weight: 600; color: var(--text-muted); margin-top: 0.5rem; animation: slide-up 0.7s var(--ease) 0.16s both; }
+.hero-stack { font-family: var(--font-mono); font-size: var(--step--1); color: var(--accent); margin-top: 1rem; animation: slide-up 0.7s var(--ease) 0.22s both; }
+.hero-tagline { font-size: var(--step-1); color: var(--text-muted); max-width: 42ch; margin-top: 1.25rem; animation: slide-up 0.7s var(--ease) 0.28s both; }
+.hero-location { font-size: var(--step--1); color: var(--text-faint); margin-top: 1rem; animation: slide-up 0.7s var(--ease) 0.34s both; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-top: 2.25rem; animation: slide-up 0.7s var(--ease) 0.4s both; }
 
-.hero-photo { justify-self: center; position: relative; width: min(100%, 320px); aspect-ratio: 1; }
+.hero-photo { justify-self: center; position: relative; width: min(100%, 320px); aspect-ratio: 1; animation: slide-up 0.8s var(--ease) 0.2s both; }
 .hero-photo::before {
   content: ''; position: absolute; inset: -14px; border-radius: 50%;
   background: conic-gradient(from 180deg, var(--accent), transparent 40%, var(--accent) 70%, transparent);
   opacity: 0.5; filter: blur(22px);
+  animation: spin-slow 14s linear infinite;
 }
 .hero-photo::after {
   content: ''; position: absolute; top: -10px; right: -6px; width: 22px; height: 22px;
   border-radius: 50%; background: var(--accent-soft); border: 2px solid var(--accent);
+  animation: float-soft 3.5s var(--ease) infinite;
 }
 .hero-photo img {
   position: relative; width: 100%; height: 100%; object-fit: cover;
   border-radius: 50%; border: 3px solid var(--accent); box-shadow: var(--shadow-accent);
+}
+
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 @media (max-width: 760px) {

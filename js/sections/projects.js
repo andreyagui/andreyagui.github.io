@@ -57,8 +57,8 @@ export function renderProjects(container, projects) {
   clear(container);
   container.append(el('div', { class: 'container' }, [
     sectionHeader({ id: 'projects', index: 3, title: projects.title, subtitle: projects.subtitle }),
-    el('ul', { class: 'project-grid', role: 'list' }, projects.featured.map((project) => featuredCard(project, projects))),
+    el('ul', { class: 'project-grid', role: 'list', 'data-reveal-group': true }, projects.featured.map((project) => featuredCard(project, projects))),
     el('h3', { class: 'other-title', text: projects.otherTitle }),
-    el('ul', { class: 'other-grid', role: 'list' }, projects.other.map(otherCard)),
+    el('ul', { class: 'other-grid', role: 'list', 'data-reveal-group': true }, projects.other.map(otherCard)),
   ]));
 }

@@ -2,9 +2,11 @@ import { detectLang, storeLang, nextLang, getContent } from './i18n.js';
 import { readTheme, applyTheme, saveTheme, nextTheme } from './theme.js';
 import { renderPage } from './render.js';
 import { initNav } from './nav.js';
+import { initReveal } from './reveal.js';
 
 let state = { lang: detectLang(), theme: readTheme() };
 let teardownNav = () => {};
+let teardownReveal = () => {};
 
 function syncThemeButton() {
   document.getElementById('theme-toggle')?.setAttribute('aria-pressed', String(state.theme === 'light'));
@@ -27,10 +29,12 @@ function bindToggles() {
 
 function mount() {
   teardownNav();
+  teardownReveal();
   renderPage(getContent(state.lang), { lang: state.lang });
   bindToggles();
   syncThemeButton();
   teardownNav = initNav();
+  teardownReveal = initReveal();
 }
 
 applyTheme(state.theme);

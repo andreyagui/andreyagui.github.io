@@ -11,7 +11,7 @@ export function renderAbout(container, about) {
     sectionHeader({ id: 'about', index: 1, title: about.title }),
     el('div', { class: 'about-grid' }, [
       el('div', { class: 'about-text' }, about.paragraphs.map((text) => el('p', { text }))),
-      el('dl', { class: 'about-highlights' }, highlights),
+      el('dl', { class: 'about-highlights', 'data-reveal-group': true }, highlights),
     ]),
   ]));
 }

@@ -69,7 +69,20 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
   border-radius: 999px; background: var(--accent-soft); color: var(--accent);
 }
 
+@keyframes slide-up {
+  from { transform: translateY(22px); }
+  to { transform: translateY(0); }
+}
+
+.reveal {
+  transform: translateY(22px);
+  transition: transform 0.7s var(--ease);
+  transition-delay: calc(min(var(--reveal-i, 0), 8) * 70ms);
+}
+.reveal.is-visible { transform: translateY(0); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .reveal { transform: none; }
 }

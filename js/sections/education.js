@@ -21,8 +21,8 @@ export function renderEducation(container, education) {
   container.append(el('div', { class: 'container' }, [
     sectionHeader({ id: 'education', index: 5, title: education.title }),
     el('div', { class: 'edu-grid' }, [
-      el('ul', { class: 'edu-list', role: 'list' }, education.items.map(educationItem)),
-      el('div', { class: 'lang-box' }, [
+      el('ul', { class: 'edu-list', role: 'list', 'data-reveal-group': true }, education.items.map(educationItem)),
+      el('div', { class: 'lang-box', 'data-reveal': true }, [
         el('h3', { class: 'lang-title', text: education.languagesTitle }),
         el('ul', { class: 'lang-list', role: 'list' }, education.languages.map(languageItem)),
       ]),
