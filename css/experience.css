@@ -16,7 +16,7 @@
   background: var(--surface); box-shadow: var(--shadow-soft);
   transition: border-color 0.2s var(--ease), transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
-.timeline-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow-accent); }
+.timeline-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow); }
 .timeline-role { font-size: var(--step-1); }
 .timeline-company { color: var(--accent); font-weight: 600; margin-top: 0.15rem; }
 .timeline-bullets { margin-top: 0.85rem; padding-left: 1.1rem; display: grid; gap: 0.45rem; color: var(--text-muted); font-size: 0.95rem; }
