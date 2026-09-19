@@ -17,6 +17,15 @@ test('print CV page renders every section and no phone number', async ({ page })
   await expect(page.locator('#cv')).not.toContainText('7106');
 });
 
+test('print CV lists real skill names, not stringified objects', async ({ page }) => {
+  await page.goto('/cv.html?lang=en');
+  await expect(page.locator('body')).toHaveAttribute('data-ready', 'true');
+  const skills = page.locator('.cv-skills');
+  await expect(skills).not.toContainText('[object Object]');
+  await expect(skills).toContainText('.NET 8');
+  await expect(skills).toContainText('React');
+});
+
 test('both download buttons point at the PDF for the current language', async ({ page }) => {
   await page.goto('/');
   const links = page.locator('a[data-cv-link]');

@@ -42,7 +42,7 @@ function projectList({ featured, other }) {
 function skillList(groups) {
   return [el('dl', { class: 'cv-skills' }, groups.flatMap((group) => [
     el('dt', { text: group.name }),
-    el('dd', { text: group.items.join(' · ') }),
+    el('dd', { text: group.items.map((item) => item.name).join(' · ') }),
   ]))];
 }
 
