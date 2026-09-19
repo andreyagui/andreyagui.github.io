@@ -1,0 +1,53 @@
+.project-grid {
+  list-style: none; padding: 0; display: grid; gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr));
+}
+.project-card {
+  display: flex; flex-direction: column; overflow: hidden;
+  border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.project-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: var(--shadow); }
+
+.project-media { aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--border); background: var(--bg-elevated); }
+.project-media img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.4s var(--ease); }
+.project-card:hover .project-media img { transform: scale(1.03); }
+.project-media--brand {
+  display: grid; place-items: center;
+  background:
+    radial-gradient(circle at 30% 20%, var(--accent-soft), transparent 60%),
+    linear-gradient(135deg, var(--bg-elevated), var(--surface-hover));
+}
+.logo-plate { display: grid; place-items: center; width: 112px; height: 112px; border-radius: 24px; background: #fff; box-shadow: var(--shadow); }
+.logo-plate img { width: 72px; height: 72px; object-fit: contain; }
+
+.project-body { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.25rem 1.5rem 1.5rem; flex: 1; }
+.project-body .tag-list { margin-top: auto; }
+.project-heading { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.project-name { display: flex; align-items: center; gap: 0.6rem; font-size: var(--step-1); }
+.project-logo { width: 28px; height: 28px; padding: 3px; border-radius: 6px; background: #fff; object-fit: contain; }
+/* rentify.png is a white-only mark on a transparent background (confirmed by visual inspection in Task 5) — the shared white chip above would swallow it, so this one project gets a dark chip instead. */
+.project-card[data-project="rentify"] .project-logo { background: var(--bg); }
+.live-badge { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent); white-space: nowrap; }
+.live-badge::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.project-tagline { font-family: var(--font-mono); font-size: var(--step--1); color: var(--accent); }
+.project-description { color: var(--text-muted); font-size: 0.95rem; }
+.project-link { display: inline-flex; align-items: center; gap: 0.4rem; align-self: flex-start; font-weight: 600; font-size: var(--step--1); }
+
+.other-title { font-size: var(--step-2); margin: clamp(3rem, 7vw, 4.5rem) 0 1.5rem; }
+.other-grid {
+  list-style: none; padding: 0; display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+.other-card {
+  display: flex; gap: 1rem; padding: 1.1rem 1.25rem;
+  border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);
+  transition: border-color 0.2s var(--ease);
+}
+.other-card:hover { border-color: var(--accent); }
+.monogram {
+  flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px;
+  background: var(--accent-soft); color: var(--accent); font-family: var(--font-mono); font-weight: 700;
+}
+.other-name { font-size: var(--step-0); }
+.other-description { color: var(--text-muted); font-size: 0.9rem; margin: 0.25rem 0 0.6rem; }
