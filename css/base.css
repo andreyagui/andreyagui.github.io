@@ -45,15 +45,15 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 
 .button {
   display: inline-flex; align-items: center; gap: 0.5rem;
-  padding: 0.75rem 1.25rem; border: 1px solid transparent; border-radius: var(--radius-sm);
+  padding: 0.85rem 1.5rem; border: 1px solid transparent; border-radius: 999px;
   font-weight: 600; font-size: var(--step--1); line-height: 1;
-  transition: background-color 0.2s var(--ease), border-color 0.2s var(--ease), color 0.2s var(--ease), transform 0.2s var(--ease);
+  transition: background-color 0.2s var(--ease), border-color 0.2s var(--ease), color 0.2s var(--ease), transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
-.button:hover { transform: translateY(-1px); }
-.button--primary { background: var(--accent); color: var(--on-accent); }
-.button--primary:hover { background: var(--accent-strong); color: var(--on-accent); }
-.button--ghost { border-color: var(--border); color: var(--text); background: transparent; }
-.button--ghost:hover { border-color: var(--accent); color: var(--accent); }
+.button:hover { transform: translateY(-2px); }
+.button--primary { background: var(--accent); color: var(--on-accent); box-shadow: var(--shadow-accent); }
+.button--primary:hover { background: var(--accent-strong); color: var(--on-accent); box-shadow: var(--shadow-accent), 0 0 0 1px var(--accent-strong) inset; }
+.button--ghost { border-color: var(--border); color: var(--text); background: var(--surface); }
+.button--ghost:hover { border-color: var(--accent); color: var(--accent); box-shadow: var(--shadow-soft); }
 
 .icon-button {
   display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 0.6rem;

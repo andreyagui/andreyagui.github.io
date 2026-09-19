@@ -12,10 +12,11 @@
 .timeline-period { font-family: var(--font-mono); font-size: var(--step--1); color: var(--accent); }
 .timeline-location { font-size: 0.8rem; color: var(--text-faint); margin-top: 0.25rem; }
 .timeline-card {
-  padding: 1.25rem 1.5rem; border: 1px solid var(--border); border-radius: var(--radius);
-  background: var(--surface); transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
+  padding: 1.5rem 1.75rem; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--surface); box-shadow: var(--shadow-soft);
+  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
-.timeline-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.timeline-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow-accent); }
 .timeline-role { font-size: var(--step-1); }
 .timeline-company { color: var(--accent); font-weight: 600; margin-top: 0.15rem; }
 .timeline-bullets { margin-top: 0.85rem; padding-left: 1.1rem; display: grid; gap: 0.45rem; color: var(--text-muted); font-size: 0.95rem; }

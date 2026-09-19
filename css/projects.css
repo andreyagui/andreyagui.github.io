@@ -5,9 +5,10 @@
 .project-card {
   display: flex; flex-direction: column; overflow: hidden;
   border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface);
+  box-shadow: var(--shadow-soft);
   transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
 }
-.project-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: var(--shadow); }
+.project-card:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: var(--shadow-accent); }
 
 .project-media { aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--border); background: var(--bg-elevated); }
 .project-media img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.4s var(--ease); }
@@ -40,13 +41,13 @@
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
 }
 .other-card {
-  display: flex; gap: 1rem; padding: 1.1rem 1.25rem;
+  display: flex; gap: 1rem; padding: 1.25rem 1.5rem;
   border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);
-  transition: border-color 0.2s var(--ease);
+  box-shadow: var(--shadow-soft); transition: border-color 0.2s var(--ease), transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
-.other-card:hover { border-color: var(--accent); }
+.other-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow-accent); }
 .monogram {
-  flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px;
+  flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px;
   background: var(--accent-soft); color: var(--accent); font-family: var(--font-mono); font-weight: 700;
 }
 .other-name { font-size: var(--step-0); }
