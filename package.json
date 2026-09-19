@@ -6,7 +6,8 @@
     "serve": "python3 -m http.server 4173 --bind 127.0.0.1",
     "test": "playwright test",
     "assets": "python3 scripts/extract_photo.py && sh scripts/copy-logos.sh && node scripts/capture-screenshots.mjs",
-    "cv:pdf": "node scripts/build-cv-pdf.mjs"
+    "cv:pdf": "node scripts/build-cv-pdf.mjs",
+    "og:image": "node scripts/capture-og-image.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.13.0",

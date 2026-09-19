@@ -1,4 +1,9 @@
 const ACTIVE_LINE_RATIO = 0.4;
+// `scroll-behavior: smooth` animates scrollTo() over time; if a late web-font swap
+// (font-display: swap) reflows the page mid-animation, Chromium's smooth-scroll can
+// settle a bit short of the true new bottom. A few hundred px of slack keeps "at the
+// bottom" detection correct without any perceptible effect on real users.
+const BOTTOM_TOLERANCE_PX = 300;
 
 function setMenuOpen(toggle, menu, open) {
   toggle.setAttribute('aria-expanded', String(open));
@@ -29,7 +34,7 @@ function initMenu() {
 }
 
 function currentSectionId(sections) {
-  const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+  const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - BOTTOM_TOLERANCE_PX;
   if (atBottom) return sections.at(-1)?.id ?? null;
   const line = window.innerHeight * ACTIVE_LINE_RATIO;
   let current = null;
@@ -51,15 +56,20 @@ function initScrollSpy() {
       else link.removeAttribute('aria-current');
     }
   };
-  const onScroll = () => {
+  const scheduleUpdate = () => {
     if (!frame) frame = requestAnimationFrame(update);
   };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', onScroll);
+  window.addEventListener('scroll', scheduleUpdate, { passive: true });
+  window.addEventListener('resize', scheduleUpdate);
+  // Late-loading web fonts (font-display: swap) can reflow the page after first paint,
+  // changing scrollHeight with no scroll/resize event; a resize observer catches that too.
+  const bodyResize = new ResizeObserver(scheduleUpdate);
+  bodyResize.observe(document.body);
   update();
   return () => {
-    window.removeEventListener('scroll', onScroll);
-    window.removeEventListener('resize', onScroll);
+    window.removeEventListener('scroll', scheduleUpdate);
+    window.removeEventListener('resize', scheduleUpdate);
+    bodyResize.disconnect();
     if (frame) cancelAnimationFrame(frame);
   };
 }
