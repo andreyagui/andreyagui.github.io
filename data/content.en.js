@@ -143,7 +143,7 @@ export const EN = {
   },
   contact: {
     title: 'Contact',
-    text: 'A project or a role in mind? Let\'s talk.',
+    text: 'A project or a role in mind? Let’s talk.',
     email: PROFILE.email,
     linkedin: PROFILE.linkedin,
     linkedinText: PROFILE.linkedinText,
