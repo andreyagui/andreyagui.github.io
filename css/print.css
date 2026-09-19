@@ -4,15 +4,15 @@
 body { font-family: 'Inter', system-ui, sans-serif; font-size: 10pt; line-height: 1.45; color: #1f2937; background: #fff; }
 .cv { max-width: 182mm; margin: 0 auto; }
 
-.cv-header { display: flex; gap: 14px; align-items: center; padding-bottom: 10px; border-bottom: 2px solid #0f766e; }
+.cv-header { display: flex; gap: 14px; align-items: center; padding-bottom: 10px; border-bottom: 2px solid #3b5bdb; }
 .cv-photo { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; }
 .cv-name { font-size: 20pt; color: #0f172a; letter-spacing: -0.01em; }
-.cv-role { font-weight: 600; color: #0f766e; margin-top: 2px; }
+.cv-role { font-weight: 600; color: #3b5bdb; margin-top: 2px; }
 .cv-contact { font-size: 8.5pt; color: #4b5563; margin-top: 2px; }
 
 .cv-section { margin-top: 12px; }
 .cv-heading {
-  font-size: 10pt; text-transform: uppercase; letter-spacing: 0.08em; color: #0f766e;
+  font-size: 10pt; text-transform: uppercase; letter-spacing: 0.08em; color: #3b5bdb;
   border-bottom: 1px solid #d1d5db; padding-bottom: 3px; margin-bottom: 6px;
 }
 .cv-section p + p { margin-top: 4px; }
