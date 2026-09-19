@@ -3,8 +3,7 @@ import { sectionHeader } from './section-header.js';
 
 function skillItem(item) {
   const icon = item.icon && techIcon(item.icon);
-  if (!icon) return el('li', { class: 'tag', text: item.name });
-  return el('li', { class: 'tech-tile', tabindex: '0', 'aria-label': item.name, 'data-tip': item.name }, icon);
+  return el('li', { class: 'tag' }, [icon, item.name]);
 }
 
 export function renderSkills(container, skills) {

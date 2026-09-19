@@ -65,9 +65,11 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 
 .tag-list { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; list-style: none; padding: 0; }
 .tag {
-  font-family: var(--font-mono); font-size: 0.75rem; padding: 0.2rem 0.55rem;
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-family: var(--font-mono); font-size: 0.75rem; padding: 0.2rem 0.6rem;
   border-radius: 999px; background: var(--accent-soft); color: var(--accent);
 }
+.tag svg { width: 0.85em; height: 0.85em; flex: none; }
 
 @keyframes slide-up {
   from { transform: translateY(22px); }
