@@ -1,0 +1,32 @@
+@page { size: A4; margin: 14mm 14mm 16mm; }
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+body { font-family: 'Inter', system-ui, sans-serif; font-size: 10pt; line-height: 1.45; color: #1f2937; background: #fff; }
+.cv { max-width: 182mm; margin: 0 auto; }
+
+.cv-header { display: flex; gap: 14px; align-items: center; padding-bottom: 10px; border-bottom: 2px solid #0f766e; }
+.cv-photo { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; }
+.cv-name { font-size: 20pt; color: #0f172a; letter-spacing: -0.01em; }
+.cv-role { font-weight: 600; color: #0f766e; margin-top: 2px; }
+.cv-contact { font-size: 8.5pt; color: #4b5563; margin-top: 2px; }
+
+.cv-section { margin-top: 12px; }
+.cv-heading {
+  font-size: 10pt; text-transform: uppercase; letter-spacing: 0.08em; color: #0f766e;
+  border-bottom: 1px solid #d1d5db; padding-bottom: 3px; margin-bottom: 6px;
+}
+.cv-section p + p { margin-top: 4px; }
+.cv-job { margin-top: 7px; break-inside: avoid; }
+.cv-job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.cv-job h3 { font-size: 10pt; color: #0f172a; }
+.cv-period { font-size: 8.5pt; color: #6b7280; white-space: nowrap; }
+.cv-job ul, .cv-projects, .cv-edu { padding-left: 14px; margin-top: 3px; }
+.cv-job li, .cv-projects li, .cv-edu li { margin-top: 2px; }
+.cv-skills { display: grid; grid-template-columns: 34mm 1fr; gap: 3px 10px; }
+.cv-skills dt { font-weight: 600; color: #0f172a; }
+.cv-languages { margin-top: 6px; }
+
+@media screen {
+  body { background: #e5e7eb; padding: 24px; }
+  .cv { background: #fff; padding: 14mm; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12); }
+}
