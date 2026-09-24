@@ -1,18 +1,19 @@
 import { test, expect } from '@playwright/test';
 
-test('shows six featured projects and six others', async ({ page }) => {
+test('shows six featured projects and five others', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('#projects .project-card')).toHaveCount(6);
-  await expect(page.locator('#projects .other-card')).toHaveCount(6);
+  await expect(page.locator('#projects .other-card')).toHaveCount(5);
 });
 
 test('only live projects link out, in a new tab without opener', async ({ page }) => {
   await page.goto('/');
   const links = page.locator('#projects a.project-link');
-  await expect(links).toHaveCount(3);
+  await expect(links).toHaveCount(4);
   await expect(links.nth(0)).toHaveAttribute('href', 'https://www.rentifycr.com');
   await expect(links.nth(1)).toHaveAttribute('href', 'https://www.nexoragents.com');
-  await expect(links.nth(2)).toHaveAttribute('href', 'https://www.kardexapp.com/es');
+  await expect(links.nth(2)).toHaveAttribute('href', 'https://www.hecboxcr.com');
+  await expect(links.nth(3)).toHaveAttribute('href', 'https://www.kardexapp.com/es');
   for (const link of await links.all()) {
     await expect(link).toHaveAttribute('target', '_blank');
     await expect(link).toHaveAttribute('rel', /noopener/);

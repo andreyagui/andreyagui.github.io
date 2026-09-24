@@ -47,7 +47,9 @@ export const PROJECTS = {
   trading: { id: 'trading', tags: ['Python', 'Freqtrade', 'Pine Script', 'Telegram'] },
   roman: { id: 'roman', name: 'Roman Agent', tags: ['OpenClaw', 'Node.js', 'Railway'] },
   sparrow: { id: 'sparrow', name: 'Sparrow', tags: ['React', 'Node.js'] },
-  durex: { id: 'durex', name: 'Durex Pride Virtual', tags: ['Web'] },
   leones: { id: 'leones', name: 'Club de Leones CR', tags: ['Android'] },
-  hecbox: { id: 'hecbox', name: 'HEC Box', url: 'https://www.hecboxcr.com', tags: ['Web'] },
+  hecbox: {
+    id: 'hecbox', name: 'HEC Box', url: 'https://www.hecboxcr.com', image: null, logo: null,
+    tags: ['Web', 'Tracking', 'E-commerce'],
+  },
 };

@@ -10,8 +10,10 @@ function projectMedia(project) {
     return el('div', { class: 'project-media' },
       el('img', { src: project.image, alt: '', loading: 'lazy', width: 1440, height: 900 }));
   }
-  return el('div', { class: 'project-media project-media--brand' },
-    el('span', { class: 'logo-plate' }, el('img', { src: project.logo, alt: '', loading: 'lazy', width: 96, height: 96 })));
+  const mark = project.logo
+    ? el('img', { src: project.logo, alt: '', loading: 'lazy', width: 96, height: 96 })
+    : el('span', { class: 'logo-monogram', text: project.name.charAt(0), 'aria-hidden': 'true' });
+  return el('div', { class: 'project-media project-media--brand' }, el('span', { class: 'logo-plate' }, mark));
 }
 
 function projectTitle(project) {

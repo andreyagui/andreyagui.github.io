@@ -55,9 +55,11 @@ export const ES = {
         role: 'Ingeniero de Software Senior', company: 'Grupo Malengo', location: 'Heredia, Costa Rica', period: 'Mar 2024 — Actualidad',
         bullets: [
           'Lidero el desarrollo de AlturaRH, SikuApps y el módulo Admin: productos internos de RR.HH. y gestión clínica.',
-          'Módulos de contratos, ausencias, control médico y nómina con .NET 8, Angular 19 y SQL Server bajo Clean Architecture.',
-          'Evolución del middleware de facturación electrónica (XML 4.4 / Cabys) según la normativa del Ministerio de Hacienda.',
-          'Integraciones REST con SikuMed que redujeron ~40% el procesamiento manual; pipelines CI/CD en Azure DevOps.',
+          'CRM e Inbox omnicanal potenciados por agentes de IA sobre Azure AI Foundry: conversaciones con pacientes atendidas, clasificadas y resueltas de forma autónoma, 24/7.',
+          'Motor de automatizaciones que devuelve tiempo a los doctores: desde recordatorios y tareas simples hasta flujos clínicos y administrativos de varios pasos, sin intervención manual.',
+          'Sistema de difusión masiva por WhatsApp integrado al Inbox y al CRM: campañas segmentadas, respuestas centralizadas y trazabilidad completa por paciente.',
+          'Plataforma interna de Customer Success para la gestión y continuidad de clientes: salud de cuentas, alertas tempranas de riesgo y seguimiento de todo el ciclo de vida.',
+          'Módulos de RR.HH. y nómina, middleware de facturación electrónica (XML 4.4) e integraciones REST con SikuMed (~40% menos procesamiento manual) con .NET 8, Angular 19 y SQL Server.',
         ],
       },
       {
@@ -102,18 +104,17 @@ export const ES = {
     featured: [
       { ...PROJECTS.rentify, tagline: 'PropTech SaaS', description: 'Gestión de alquileres para propietarios en Costa Rica: contratos generados con IA, panel financiero y arquitectura multi-tenant.' },
       { ...PROJECTS.nexora, tagline: 'Agentes de IA para marketing', description: 'Un departamento de marketing autónomo: agentes de IA que investigan, crean y publican contenido en redes sociales; el cliente solo aprueba.' },
+      { ...PROJECTS.hecbox, tagline: 'Casillero y envíos Miami → Costa Rica', description: 'Sitio de HEC Box, servicio de casillero y envíos entre Miami y Costa Rica: seguimiento de paquetes en tiempo real, consolidación de compras de varias tiendas y entrega a domicilio.' },
       { ...PROJECTS.kardex, tagline: 'Historial vehicular con IA', description: 'App móvil que predice fallas mecánicas con IA, certifica el historial del vehículo con reportes en PDF y controla gastos de combustible y mantenimiento; incluye traspaso digital de propiedad y planes para flotas.' },
       { ...PROJECTS.duopay, tagline: 'Finanzas en pareja', description: 'Gastos, presupuestos y balances compartidos para parejas, en web y app móvil.' },
       { ...PROJECTS.andara, tagline: 'Gestión de portafolio', description: 'Panel propio para gestionar todos mis productos: proyectos, etapas, tareas y preparación para producción.' },
-      { ...PROJECTS.exchange, tagline: 'Journal de trading', description: 'Registro de operaciones de trading con dashboard de métricas y rendimiento.' },
     ],
     other: [
       { ...PROJECTS.trading, name: 'Sistema de trading algorítmico', description: 'Construido sobre Freqtrade (open-source): estrategias propias, auditoría de resultados y alertas por Telegram.' },
       { ...PROJECTS.roman, description: 'Agente autónomo construido sobre OpenClaw (open-source), personalizado y desplegado en Railway.' },
       { ...PROJECTS.sparrow, description: 'E-commerce de moda anime: catálogo, carrito y gestión de pedidos.' },
-      { ...PROJECTS.durex, description: 'Sitio de la primera marcha virtual LGBTQ+ de Costa Rica, en alianza con Durex (cobertura en La República).' },
       { ...PROJECTS.leones, description: 'App móvil para el Club de Leones de Costa Rica: miembros, solicitudes de ayuda y actividades.' },
-      { ...PROJECTS.hecbox, description: 'Sitio de HEC Box, servicio de casillero y envíos entre Miami y Costa Rica: seguimiento de paquetes en tiempo real, consolidación de compras de varias tiendas y entrega a domicilio.' },
+      { ...PROJECTS.exchange, description: 'Journal de trading: registro de operaciones con dashboard de métricas y rendimiento.' },
     ],
   },
   skills: {
@@ -144,7 +145,7 @@ export const ES = {
         { name: 'JWT / OAuth2', icon: 'jsonwebtokens' }, { name: 'Multi-tenant', icon: null },
       ] },
       { name: 'IA', items: [
-        { name: 'Agentes de IA', icon: null }, { name: 'Gemini API', icon: 'googlegemini' },
+        { name: 'Agentes de IA', icon: null }, { name: 'Gemini API', icon: 'googlegemini' }, { name: 'Azure AI Foundry', icon: null },
         { name: 'Desarrollo asistido por IA', icon: null }, { name: 'Machine Learning', icon: null },
       ] },
       { name: 'Reportes y fiscal', items: [

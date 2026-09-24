@@ -21,6 +21,7 @@
 }
 .logo-plate { display: grid; place-items: center; width: 112px; height: 112px; border-radius: var(--radius); background: #fff; box-shadow: var(--shadow); }
 .logo-plate img { width: 72px; height: 72px; object-fit: contain; }
+.logo-monogram { font-size: 3rem; font-weight: 700; line-height: 1; color: #111; }
 
 .project-body { display: flex; flex-direction: column; gap: 0.75rem; padding: 1.25rem 1.5rem 1.5rem; flex: 1; }
 .project-body .tag-list { margin-top: auto; }

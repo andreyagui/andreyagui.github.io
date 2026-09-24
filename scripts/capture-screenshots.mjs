@@ -7,6 +7,8 @@ const SETTLE_MS = 1500;
 const TARGETS = [
   { name: 'rentify', url: 'https://www.rentifycr.com' },
   { name: 'nexora', url: 'https://www.nexoragents.com' },
+  { name: 'hecbox', url: 'https://www.hecboxcr.com' },
+  { name: 'kardex', url: 'https://www.kardexapp.com/es' },
 ];
 
 async function capture(browser, { name, url }) {

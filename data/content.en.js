@@ -55,9 +55,11 @@ export const EN = {
         role: 'Senior Software Engineer', company: 'Grupo Malengo', location: 'Heredia, Costa Rica', period: 'Mar 2024 — Present',
         bullets: [
           'Lead development of AlturaRH, SikuApps and the Admin module: internal HR and clinical-management products.',
-          'Contracts, absences, medical-control and payroll modules with .NET 8, Angular 19 and SQL Server using Clean Architecture.',
-          'Evolved the e-invoicing middleware (XML 4.4 / Cabys) to meet Costa Rican Ministry of Finance rules.',
-          'REST integrations with SikuMed that cut manual processing by ~40%; CI/CD pipelines on Azure DevOps.',
+          'Omnichannel CRM and Inbox powered by AI agents on Azure AI Foundry: patient conversations handled, triaged and resolved autonomously, 24/7.',
+          'Automation engine that gives doctors their time back: from simple reminders and tasks to multi-step clinical and administrative workflows, hands-free.',
+          'WhatsApp broadcast system built into the Inbox and CRM: segmented campaigns, centralized replies and full per-patient traceability.',
+          'Internal Customer Success platform for client management and continuity: account health, early risk alerts and end-to-end lifecycle tracking.',
+          'HR and payroll modules, e-invoicing middleware (XML 4.4) and REST integrations with SikuMed (~40% less manual processing) with .NET 8, Angular 19 and SQL Server.',
         ],
       },
       {
@@ -102,18 +104,17 @@ export const EN = {
     featured: [
       { ...PROJECTS.rentify, tagline: 'PropTech SaaS', description: 'Rental management for property owners in Costa Rica: AI-generated contracts, financial dashboard and multi-tenant architecture.' },
       { ...PROJECTS.nexora, tagline: 'AI marketing agents', description: 'An autonomous marketing department: AI agents that research, create and publish social media content; the client only approves.' },
+      { ...PROJECTS.hecbox, tagline: 'Miami → Costa Rica shipping', description: 'Website for HEC Box, a Miami-to-Costa Rica package forwarding service: real-time tracking, consolidated shipments from multiple stores and home delivery.' },
       { ...PROJECTS.kardex, tagline: 'AI vehicle history', description: 'Mobile app that predicts mechanical failures with AI, certifies vehicle history with PDF reports, and tracks fuel and maintenance expenses; includes digital ownership transfer and fleet plans.' },
       { ...PROJECTS.duopay, tagline: 'Couples finance', description: 'Shared expenses, budgets and balances for couples, on web and mobile.' },
       { ...PROJECTS.andara, tagline: 'Portfolio management', description: 'My own dashboard to run all my products: projects, stages, tasks and production readiness.' },
-      { ...PROJECTS.exchange, tagline: 'Trading journal', description: 'Trade log with a metrics and performance dashboard.' },
     ],
     other: [
       { ...PROJECTS.trading, name: 'Algorithmic trading system', description: 'Built on Freqtrade (open source): my own strategies, results auditing and Telegram alerts.' },
       { ...PROJECTS.roman, description: 'Autonomous agent built on OpenClaw (open source), customized and deployed on Railway.' },
       { ...PROJECTS.sparrow, description: 'Anime fashion e-commerce: catalog, cart and order management.' },
-      { ...PROJECTS.durex, description: "Website for Costa Rica's first virtual LGBTQ+ Pride march, in partnership with Durex (covered by La República)." },
       { ...PROJECTS.leones, description: 'Mobile app for the Lions Club of Costa Rica: members, aid requests and activities.' },
-      { ...PROJECTS.hecbox, description: 'Website for HEC Box, a Miami-to-Costa Rica package forwarding service: real-time tracking, consolidated shipments from multiple stores and home delivery.' },
+      { ...PROJECTS.exchange, description: 'Trading journal: trade log with a metrics and performance dashboard.' },
     ],
   },
   skills: {
@@ -144,7 +145,7 @@ export const EN = {
         { name: 'JWT / OAuth2', icon: 'jsonwebtokens' }, { name: 'Multi-tenant', icon: null },
       ] },
       { name: 'AI', items: [
-        { name: 'AI agents', icon: null }, { name: 'Gemini API', icon: 'googlegemini' },
+        { name: 'AI agents', icon: null }, { name: 'Gemini API', icon: 'googlegemini' }, { name: 'Azure AI Foundry', icon: null },
         { name: 'AI-assisted development', icon: null }, { name: 'Machine Learning', icon: null },
       ] },
       { name: 'Reporting & tax', items: [
