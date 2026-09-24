@@ -45,7 +45,6 @@ test('excluded repositories are never listed', () => {
 test('projects built on open-source frameworks credit them', () => {
   for (const lang of ['es', 'en']) {
     const other = CONTENT[lang].projects.other;
-    expect(other.find((p) => p.id === 'trading').description).toContain('Freqtrade');
     expect(other.find((p) => p.id === 'roman').description).toContain('OpenClaw');
   }
 });

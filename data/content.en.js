@@ -110,8 +110,8 @@ export const EN = {
       { ...PROJECTS.andara, tagline: 'Portfolio management', description: 'My own dashboard to run all my products: projects, stages, tasks and production readiness.' },
     ],
     other: [
-      { ...PROJECTS.trading, name: 'Algorithmic trading system', description: 'Built on Freqtrade (open source): my own strategies, results auditing and Telegram alerts.' },
-      { ...PROJECTS.roman, description: 'Autonomous agent built on OpenClaw (open source), customized and deployed on Railway.' },
+      { ...PROJECTS.trading, name: 'Algorithmic trading system', description: 'My own Smart Money Concepts engine in Python: detects order blocks, fair value gaps, liquidity sweeps and structure breaks with no look-ahead bias. An ML model manages exits, with fixed per-trade risk, circuit breakers and Telegram alerts; trades crypto futures 24/7 from Docker in the cloud.' },
+      { ...PROJECTS.roman, description: 'My autonomous personal agent, built on OpenClaw (open source): runs 24/7 in the cloud, understands natural-language instructions and automates everything from everyday tasks to multi-step workflows. Tailored to the way I work and deployed on Railway.' },
       { ...PROJECTS.sparrow, description: 'Anime fashion e-commerce: catalog, cart and order management.' },
       { ...PROJECTS.leones, description: 'Mobile app for the Lions Club of Costa Rica: members, aid requests and activities.' },
       { ...PROJECTS.exchange, description: 'Trading journal: trade log with a metrics and performance dashboard.' },

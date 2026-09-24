@@ -35,6 +35,5 @@ test('every project image loads', async ({ page }) => {
 
 test('projects built on open source credit their base framework', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('#projects [data-project="trading"]')).toContainText('Freqtrade');
   await expect(page.locator('#projects [data-project="roman"]')).toContainText('OpenClaw');
 });
