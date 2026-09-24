@@ -145,7 +145,7 @@ export const ES = {
         { name: 'JWT / OAuth2', icon: 'jsonwebtokens' }, { name: 'Multi-tenant', icon: null },
       ] },
       { name: 'IA', items: [
-        { name: 'Agentes de IA', icon: null }, { name: 'Gemini API', icon: 'googlegemini' }, { name: 'Azure AI Foundry', icon: null },
+        { name: 'Agentes de IA', icon: null }, { name: 'Gemini API', icon: 'googlegemini' }, { name: 'Azure AI Foundry', icon: null }, { name: 'Google Cloud', icon: 'googlecloud' },
         { name: 'Desarrollo asistido por IA', icon: null }, { name: 'Machine Learning', icon: null },
       ] },
       { name: 'Reportes y fiscal', items: [
