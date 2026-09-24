@@ -55,7 +55,7 @@ export const ES = {
         role: 'Ingeniero de Software Senior', company: 'Grupo Malengo', location: 'Heredia, Costa Rica', period: 'Mar 2024 — Actualidad',
         bullets: [
           'Lidero el desarrollo de AlturaRH, SikuApps y el módulo Admin: productos internos de RR.HH. y gestión clínica.',
-          'CRM e Inbox omnicanal potenciados por agentes de IA sobre Azure AI Foundry: conversaciones con pacientes atendidas, clasificadas y resueltas de forma autónoma, 24/7.',
+          'CRM e Inbox unificado con agentes de IA sobre Azure AI Foundry: conversaciones con pacientes atendidas, clasificadas y resueltas de forma autónoma, 24/7.',
           'Motor de automatizaciones que devuelve tiempo a los doctores: desde recordatorios y tareas simples hasta flujos clínicos y administrativos de varios pasos, sin intervención manual.',
           'Sistema de difusión masiva por WhatsApp integrado al Inbox y al CRM: campañas segmentadas, respuestas centralizadas y trazabilidad completa por paciente.',
           'Plataforma interna de Customer Success para la gestión y continuidad de clientes: salud de cuentas, alertas tempranas de riesgo y seguimiento de todo el ciclo de vida.',
