@@ -40,7 +40,7 @@ export const EN = {
     title: 'Profile',
     paragraphs: [
       'Senior Software Engineer with 9+ years across banking, healthcare, retail and SaaS. I mostly work with .NET 8, Angular 19, React and SQL Server, using Clean Architecture and CI/CD.',
-      'Today I build AI agents on Azure AI Foundry and ship my own SaaS products to production. I have led teams and delivered a banking payment system that doubled projected sales.',
+      'Today I build AI agents on Azure AI Foundry / Google Cloud that serve patients and automate clinic operations, and I ship my own products to production: AI marketing agents, rental management and vehicle history. I have been part of technical teams delivering a bank vehicle-tax (marchamo) payment system that doubled projected sales, while keeping a solid hand on critical integrations like e-invoicing. I round it all out with Machine Learning studies.',
     ],
     highlights: [
       { value: '9+', label: 'years of experience' },
