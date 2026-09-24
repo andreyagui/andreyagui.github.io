@@ -40,7 +40,7 @@ export const EN = {
     title: 'Profile',
     paragraphs: [
       'Senior Software Engineer with 9+ years across banking, healthcare, retail and SaaS. I mostly work with .NET 8, Angular 19, React and SQL Server, using Clean Architecture and CI/CD.',
-      'I have led technical teams, integrated Costa Rican e-invoicing (XML 4.4) and shipped my own products to production. Today I pair that craft with AI-assisted development and Machine Learning studies.',
+      'Today I build AI agents on Azure AI Foundry that serve patients and automate clinic operations, and I ship my own products to production: AI marketing agents, rental management and AI-powered vehicle history. I have led technical teams and delivered a banking payment system that doubled projected sales, while keeping a solid hand on critical integrations like e-invoicing. I round it out with Machine Learning studies.',
     ],
     highlights: [
       { value: '9+', label: 'years of experience' },

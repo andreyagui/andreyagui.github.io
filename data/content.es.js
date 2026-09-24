@@ -40,7 +40,7 @@ export const ES = {
     title: 'Perfil',
     paragraphs: [
       'Ingeniero de Software Senior con más de 9 años en los sectores bancario, salud, retail y SaaS. Trabajo principalmente con .NET 8, Angular 19, React y SQL Server, bajo Clean Architecture y CI/CD.',
-      'He liderado equipos técnicos, integrado la facturación electrónica costarricense (XML 4.4) y llevado productos propios a producción. Hoy combino ese oficio con desarrollo asistido por IA y estudios en Machine Learning.',
+      'Hoy construyo agentes de IA sobre Azure AI Foundry que atienden pacientes y automatizan la operación de clínicas, y llevo a producción mis propios productos: agentes de IA para marketing, gestión de alquileres e historial vehicular con IA. He liderado equipos técnicos y entregado un sistema de pagos bancario que duplicó las ventas proyectadas, sin perder el oficio en integraciones críticas como la facturación electrónica. Complemento todo con estudios en Machine Learning.',
     ],
     highlights: [
       { value: '9+', label: 'años de experiencia' },
