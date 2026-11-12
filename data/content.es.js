@@ -138,7 +138,7 @@ export const ES = {
     languagesTitle: 'Idiomas',
     languages: [
       { name: 'Español', level: 'Nativo' },
-      { name: 'Inglés', level: 'Intermedio-avanzado (B2)' },
+      { name: 'Inglés', level: 'Intermedio-bajo (lectura técnica)' },
     ],
   },
   contact: {
