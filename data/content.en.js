@@ -163,7 +163,7 @@ export const EN = {
     languagesTitle: 'Languages',
     languages: [
       { name: 'Spanish', level: 'Native' },
-      { name: 'English', level: 'Upper-intermediate (B2)' },
+      { name: 'English', level: 'Lower-intermediate (technical reading)' },
     ],
   },
   contact: {
